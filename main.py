@@ -196,12 +196,12 @@ async def film(ctx, film_str: str):
                 
                 from os.path  import basename
                 
-                pic = []
-                for img in image:
-                    pic.append(img['src'])
-                print(pic[0])
-                with open(basename(pic[0]), "wb") as f:
-                    f.write(requests.get(pic[0]).content)
+                # pic = []
+                # for img in image:
+                #     pic.append(img['src'])
+                # print(pic[0])
+                # with open(basename(pic[0]), "wb") as f:
+                #     f.write(requests.get(pic[0]).content)
                     
                 
                 allInfos = soup2.find('ul', class_ = 'flist')
